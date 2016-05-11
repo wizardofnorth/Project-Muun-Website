@@ -90,7 +90,6 @@ header a:hover {
 
 .bar {
     display: block;
-    width: 100%;
     font-size: 1.5em;
     padding: 0.4em;
     text-align: center;
@@ -99,18 +98,31 @@ header a:hover {
     color: #ffffff;
 }
 
-.bar .collum {
+.bar .collumn {
     text-align: center;
-    max-width: auto;
-    min-width: 45%;
+    width: auto;
+    width: 50%;
     margin: 0 auto;
     display: inline-block;
     vertical-align: top;
 }
-.collum p {
+.collumn .padding {
+   margin: 20px;
+}
+@media (max-width: 600px) {
+   .bar .collumn {
+      width: auto
+   }
+   .bar .padding {
+      margin: 0.5em;
+   }
+
+
+}
+.collumn p {
     text-align: left;
 }
-.collum img {
+.collumn img {
    width: 8em
 }
 
